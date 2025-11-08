@@ -1,0 +1,22 @@
+{
+  "name": "mObywatel 2.0",
+  "short_name": "mObywatel",
+  "description": "Logowanie i dostęp do usług — mObywatel 2.0",
+  "start_url": "/obywatelek/?utm_source=homescreen",
+  "scope": "/obywatelek/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b5cff",
+  "icons": [
+    {
+      "src": "/obywatelek/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/obywatelek/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

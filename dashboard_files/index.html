@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <link rel="manifest" href="/obywatelek/manifest.json">
+<meta name="theme-color" content="#0b5cff">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>obywatelek</title>
+  <link rel="manifest" href="/obywatelek/manifest.json">
+  <meta name="theme-color" content="#0b5cff">
+</head>
+<body>
+  <h1>obywatelek</h1>
+  <p>PWA dodane – możesz zainstalować aplikację na ekranie głównym!</p>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/obywatelek/service-worker.js')
+        .then(reg => console.log('SW zarejestrowany:', reg.scope))
+        .catch(err => console.warn('Błąd rejestracji SW:', err));
+    });
+  }
+ 
+  </script>
+</body>
+</html>
