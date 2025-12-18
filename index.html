@@ -315,6 +315,11 @@
         }
     </style>
 
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 <link id="chromealerabat-link" rel="stylesheet" type="text/css" href="chrome-extension://dacdinoicboceafielngnmjjplncljhj/content.css"></head>
 <body>
         <div class="dynamic-panel">
@@ -371,4 +376,15 @@
                         <div data-range="61-80" class="segment"><span></span></div>
                         <div data-range="81-100" class="segment"><span></span></div>
                     </div>
-                </div></body></html>
+                </div>
+
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+
+
+</body></html>
