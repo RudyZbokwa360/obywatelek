@@ -1,10 +1,10 @@
-const CACHE_NAME = 'obywatelek-cache-v1';
+const CACHE_NAME = 'mObywatel-cache-v1';
 const ASSETS_TO_CACHE = [
-  '/obywatelek/',
-  '/obywatelek/index.html',
-  '/obywatelek/manifest.json',
-  '/obywatelek/icons/icon-192.png',
-  '/obywatelek/icons/icon-512.png'
+  '/mObywatel/',
+  '/mObywatel/index.html',
+  '/mObywatel/manifest.json',
+  '/mObywatel/icons/icon-192.png',
+  '/mObywatel/icons/icon-512.png'
 ];
 
 self.addEventListener('install', event => {
@@ -33,7 +33,7 @@ self.addEventListener('fetch', event => {
           caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy));
         }
         return resp;
-      }).catch(() => caches.match('/obywatelek/index.html'));
+      }).catch(() => caches.match('/mObywatel/index.html'));
     })
   );
 });
